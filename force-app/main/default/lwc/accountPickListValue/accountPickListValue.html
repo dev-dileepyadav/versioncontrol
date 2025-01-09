@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Account PickList Value">
+        <lightning-combobox
+            name="picklist-input"
+            label="Choose an option"
+            options={accountSource}
+            onchange={handleChange}
+            value={accountSource}
+        ></lightning-combobox>
+        <div class="slds-p-around_small">Selected option : {selectedValue}</div>
+    </lightning-card>
+</template>

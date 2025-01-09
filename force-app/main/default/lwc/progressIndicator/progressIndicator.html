@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Save your card">
+        <lightning-progress-indicator current-step={currentStep} type="base" variant="base">
+            <lightning-progress-step label="Step1" value="1"></lightning-progress-step>
+            <lightning-progress-step label="Step2" value="2"></lightning-progress-step>
+            <lightning-progress-step label="Step3" value="3"></lightning-progress-step>
+        </lightning-progress-indicator>
+        <div style="width: 10cm; height: 12.5cm; margin-left:8cm;margin-top:2cm">
+            <template lwc:if={cardForm}>
+                <div style="margin-left:0.9cm;">
+                    <lightning-input label="Email" type="email" style="width: 8.3cm;"></lightning-input>
+                    <lightning-input label="Card Informations" data-field = 'card'></lightning-input>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
