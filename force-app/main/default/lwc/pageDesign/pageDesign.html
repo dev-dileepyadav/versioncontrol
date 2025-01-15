@@ -1,0 +1,45 @@
+<template>
+    <lightning-card>
+    <div class="Container">
+    
+        <lightning-accordion allow-multiple-sections-open class="example-accordion">
+            <lightning-accordion-section name="A" label="Medicale Details">
+    <p>All the fields in this section are read only to update your medicle details</p>
+
+    <h1>01/01/2018 - vibration white finger</h1>
+    <lightning-select
+            name="tickets"
+            label="Description"
+            options={options}></lightning-select>
+    <lightning-textarea class="textarea" name="input1" label="Description (other)" ></lightning-textarea>
+    <lightning-input type="date" label="Start Date"></lightning-input>
+    <lightning-input type="date" label="End Date"></lightning-input>
+
+    <h1>19 /06/2016 - Super long Medicale</h1>
+    <lightning-select
+            name="tickets"
+            label="Description"
+            options={options}></lightning-select>
+    <lightning-textarea class="textarea" name="input1" label="Description (other)" ></lightning-textarea>
+    <lightning-input type="date" label="Start Date"></lightning-input>
+    <lightning-input type="date" label="End Date"></lightning-input>
+
+</lightning-accordion-section>
+
+<lightning-accordion-section name="A" label="Medicale Details">
+    <p>All the fields in this section are read only to update your medicle details</p>
+
+    <h1>01/01/2018 - vibration white finger</h1>
+    <lightning-select
+            name="tickets"
+            label="Description"
+            options={options}></lightning-select>
+    <lightning-textarea class="textarea" name="input1" label="Description (other)" ></lightning-textarea>
+    <lightning-input type="date" label="Start Date"></lightning-input>
+    <lightning-input type="date" label="End Date"></lightning-input>
+
+</lightning-accordion-section>
+</lightning-accordion>
+</div>
+</lightning-card>
+</template>

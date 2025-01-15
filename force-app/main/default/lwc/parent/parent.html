@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Parent Component">
+        <!--c-child></c-child>
+        <lightning-input label="First Name" class="fn"  type="text"></lightning-input>
+        <lightning-input label="Last Name" class="ln" type="text" ></lightning-input>
+        <lightning-button label="Send To Child" onclick={handleClick}></lightning-button-->
+
+            <template for:each={data} for:item="item">
+                <lightning-input key={item.values} label={item.label} data-value={item.values} type="checkbox"></lightning-input>
+            </template>
+            <!--
+    <c-multi-select-combobox
+    label="Options"
+    name="options"
+    options={options}
+    onchange={handleChange}
+  ></c-multi-select-combobox>
+  -->
+    </lightning-card>
+</template>

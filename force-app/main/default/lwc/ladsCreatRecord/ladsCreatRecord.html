@@ -1,0 +1,19 @@
+<template>
+    <lightning-layout>
+        <lightning-layout-item size="6">
+            <lightning-card title="Create Account">
+                <lightning-input type="text" label="Account Name" onchange={accName}></lightning-input>
+            <lightning-input type="text" label="Account Phone" onchange={accPhone}></lightning-input>
+            <lightning-input type="text" label="Account Industry" onchange={accInducsty} value={accRecIndustry}></lightning-input>
+            <lightning-button onclick={handelclick} label="Create Account"></lightning-button>
+            </lightning-card>
+        </lightning-layout-item>
+        <lightning-layout-item size="6">
+            <lightning-card title="Show Account Details">
+                <lightning-input type="text" label="Account Name" value={accRecName}></lightning-input>
+            <lightning-input type="text" label="Account Phone" value={accRecPhone}></lightning-input>
+            <lightning-input type="text" label="Account Industry" value={accRecIndustry}></lightning-input>
+            </lightning-card>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>

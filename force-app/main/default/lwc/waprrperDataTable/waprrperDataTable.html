@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Wrapper class data table">
+        <lightning-button 
+        label="Delete Multiple Buttons" 
+        onclick={handleClick} 
+        variant="destructive" 
+        disabled={isButtonDisabled}>
+    </lightning-button>
+    <lightning-button label="Delete Selected Rows" onclick={deleteMultipleRecords}></lightning-button>
+    <lightning-datatable
+    key-field="Id"
+    data={data}
+    columns={columns}
+    onsave={handleSave}
+    onrowaction={handleRowAction}
+    onrowselection={handleRowSelection}
+    ></lightning-datatable>
+</lightning-card>
+</template>

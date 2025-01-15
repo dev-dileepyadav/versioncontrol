@@ -1,0 +1,9 @@
+<template>
+    <lightning-button label="Send email" onclick={handleClick}></lightning-button>
+    <lightning-datatable
+        data={contacts.data}
+        columns={columns}
+        key-field="Id"
+        onrowselection={getSelectedRecords}>
+    </lightning-datatable>
+</template>

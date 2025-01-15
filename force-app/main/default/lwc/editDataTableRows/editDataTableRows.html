@@ -1,0 +1,19 @@
+<template>
+        <div class="buttonclic">
+        <lightning-button label="Up" onclick={handleUpClick}></lightning-button>
+        <lightning-button label="down" onclick={handleDownClick}></lightning-button>
+</div>
+        <div class="dataTableHeight">
+    <lightning-datatable
+                key-field="id"
+                data={contacts}
+                columns={columns} 
+                onsave={saveHandler}
+                draft-values={draftValues}>
+        </lightning-datatable>
+</div>
+<div class="buttonclick">
+        <lightning-button label="Up" onclick={handleUpClick}></lightning-button>
+        <lightning-button label="down" onclick={handleDownClick}></lightning-button>
+</div>
+</template>

@@ -1,0 +1,10 @@
+<template>
+    <template lwc:if={displayData}>
+    <lightning-datatable
+    columns={columns}
+    data={contactsData}
+    key-field="Id"
+    onheaderaction={handleHeaderAction}
+    ></lightning-datatable>
+</template>
+</template>

@@ -1,0 +1,6 @@
+<template>
+    <h1>Email Template</h1>
+    <template for:each={data} for:item="d">
+        <p key={d.Id}>{d.Body}</p>
+    </template>
+</template>

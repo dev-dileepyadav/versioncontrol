@@ -1,0 +1,46 @@
+<template>
+     <lightning-card>
+          <div class="slds-grid slds-gutters">
+               <div class="slds-col">
+                    <span>
+                         <div>
+                              <lightning-card>
+                                   <h3 slot="title">
+                                        <lightning-icon icon-name="standard:account" size="small"></lightning-icon>
+                                        Custom
+                                        Search
+                                        Functionality on Account Object in LWC.
+                                   </h3>
+
+                                   <p class="slds-p-horizontal_small">
+                                        <lightning-input type="search" class="slds-m-bottom_small"
+                                             label="Search Account Name" onchange={searchAccountAction}
+                                             value={accountName}></lightning-input>
+                                   </p>
+                                   <div class="slds-p-around--medium">
+                                        <table border="1" cellpadding="5" cellspacing="0"
+                                             style="border-collapse:collapse;" class="lwsTablePad">
+                                             <tr>
+                                                  <th>Name</th>
+                                             </tr>
+                                             <template for:each={accountList} for:item="accObj" for:index="index">
+                                                  <tr class="slds-hint-parent" key={accObj.Id}>
+                                                       <td draggable="true" data-name={accObj.Name}>{accObj.Name}</td>
+                                                  </tr>
+                                             </template>
+                                        </table>
+                                   </div>
+                              </lightning-card>
+                         </div>
+                    </span>
+               </div>
+               <div class="slds-col">
+                    <span>
+                         <!--c-calendar ondatechange={handleDateChange}></c-calendar-->
+                    </span>
+               </div>
+          </div>
+     </lightning-card>
+
+
+</template>

@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Account with Contacts in Wrapper class">
+        <div class="slds-m-around_medium">
+            <template if:true={accountsWithContact}>
+                <template for:each={accountsWithContact} for:item="acccon">
+                    <lightning-badge label={acccon.name} key={acccon.accRecord.id}></lightning-badge>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>
