@@ -1,0 +1,12 @@
+<template>
+    <div class="slds-var-p-around_small">
+        <lightning-button variant="brand" label="Export Data" title="Download CSV file" icon-name="utility:download" class="slds-m-left_x-small" onclick={clickHandler} disabled={checkRecord}></lightning-button>
+    </div>
+    <div style="height: 300px;">
+        <lightning-datatable
+                key-field="id"
+                data={data}
+                columns={columns}>
+        </lightning-datatable>
+    </div>
+</template>

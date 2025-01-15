@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Toast message child element">
+        <template lwc:if={errorMessage}>
+            <p>Getting Error</p>
+        </template>
+
+        <template lwc:if={successMessage}>
+            <p>Sucess</p>
+        </template>
+    </lightning-card>
+    <!--lightning-button label="Show Toast" onclick={showing}></lightning-button-->
+</template>

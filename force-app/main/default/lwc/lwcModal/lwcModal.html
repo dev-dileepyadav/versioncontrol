@@ -1,0 +1,16 @@
+<template>
+   <lightning-layout>
+      <lightning-layout-item size="4">
+      </lightning-layout-item>
+      
+      <lightning-layout-item size="4" class="inputBox">
+         <lightning-card lwc:if={showInput}  title="Text Box">
+            <lightning-input value={inputValue}></lightning-input>
+         </lightning-card>
+      </lightning-layout-item>
+
+      <lightning-layout-item size="4" class="icon">
+         <lightning-icon onclick={handleShow} icon-name="utility:chevrondown" alternative-text="Show Text Box" title="Show Text Box"></lightning-icon>
+      </lightning-layout-item>
+   </lightning-layout>
+</template>

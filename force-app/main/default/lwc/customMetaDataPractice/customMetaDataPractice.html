@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Custom meta data practice"></lightning-card>
+    <template for:each={data} for:item="d">
+        <div key = {d.email__c}>
+            <lightning-input label="Email" value={d.email__c} onchange={handleChange}></lightning-input>
+        </div>
+    </template>
+    <lightning-button label="Update" onclick={handleChange}></lightning-button>
+    
+    
+</template>

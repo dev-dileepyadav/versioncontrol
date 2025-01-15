@@ -1,0 +1,8 @@
+<template>
+<template for:each={data} for:item="d">
+    <div key={d.id} draggable="true" data-item={d.Id} ondragstart={handleDragStart}>
+        {d.Name}
+    </div>
+    
+</template>    
+</template>
